@@ -132,22 +132,119 @@
 // console.log (`Ура`)
 //   }while ( balance)
 
-let theme =  prompt(`Выбери тему`) // white // black //
+// let theme =  prompt(`Выбери тему`) // white // black //
  
-switch (theme) {
-  case 'white':{
-    console.log ('пользователь пожелал белую')
-  };
-   case 'black':{
-    console.log ('пользователь пожелал черную')
-    break // выйти
-  }; 
+// switch (theme) {
+//   case 'white':{
+//     console.log ('пользователь пожелал белую')
+//     break
+//   };
+//    case 'black':{
+//     console.log ('пользователь пожелал черную')
+//     break // выйти
+//   }; 
     
 
-  default:
-  {
-    console.log ('пользователь ничего не выбрал')
-  }
+//   default:
+//   {
+//     console.log ('пользователь ничего не выбрал')
+//   }
   
     
+// }
+
+// function logUserInfo(secondName , firstName, userAge, city ){ //локальная переменная
+//   console.log(secondName,firstName,userAge, city);
+// }
+// console.log(secondName)
+
+// //вызвать функцию
+// logUserInfo('Sobol', 'Vlad', 31, 'Vitebsk')
+
+//====================================================
+
+//написать функцию сложения, котороя принимает два пареметра
+
+// function calcsum(firstnum , secondnum){ //локальная переменная
+//   // console.log(firstnum,secondnum);
+//   let sum = firstnum + secondnum
+
+//   console.log(sum)}
+
+// //вызвать функцию
+// calcsum(2, 3)
+
+//====================================================
+
+// функцию, которая принимает два аргумента (числовых значения) и выполняет с ними операцию, которую укажет user в качестве 3-го аргумента
+ 
+// function logResult (onearg, twoarg, userInfo){
+//   let userInfo = onearg ( `Введите 1й аргумент`);
+//   let userInfo = twoarg ( `Введите 2й аргумент`);
+//   let userInfo = prompt ( `Введите 3й аргумент`);
+//   let result = onearg + userInfo + twoarg;
+//   switch (true) {
+//     case  userInfo = '+':
+//      console.log (result);
+//   }
+
+  
+//   console.log ()
+// }
+
+
+// function controller (num1, num2, operator ) {
+// switch(operator){
+//   case '+':
+//     console.log(num1 + num2 )
+//     break
+//   case '-':
+//     console.log(num1 - num2 )
+//     break
+//   case '/':
+//     console.log(num1 / num2 )
+//     break
+//   case '*':
+//     console.log(num1 * num2 )
+//     break
+//     default:
+
+//     console.log('Введите (+, -, /, *)' )
+    
+// }
+// }
+// controller(8, 4, '*')
+
+//============================================
+
+// for (let index = 1; index < 10; index ++){
+//   if (index=== 5){
+//     return null
+//   }
+// }
+
+// Стрелочная функция
+
+// const arrayFoo = () => {
+//   console.log (2);
+
+// }
+// arrayFoo ()
+
+// let d = ''
+
+//===============================
+function fool(firstName,name,age)  {
+
+  const foo2 = (secondName) => {
+
+    const foo3 = function ( age){
+     
+      console.log(firstName,secondName,age)
+    }
+    foo3(age)
+  }
+  foo2(secondName )
 }
+
+fool1('Vlad', 'Sobol', 32)
