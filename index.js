@@ -234,17 +234,185 @@
 // let d = ''
 
 //===============================
-function fool(firstName,name,age)  {
+// function fool(firstName,name,age)  {
 
-  const foo2 = (secondName) => {
+//   const foo2 = (secondName) => {
 
-    const foo3 = function ( age){
+//     const foo3 = function ( age){
      
-      console.log(firstName,secondName,age)
-    }
-    foo3(age)
+//       console.log(firstName,secondName,age)
+//     }
+//     foo3(age)
+//   }
+//   foo2(secondName )
+// }
+
+// fool1('Vlad', 'Sobol', 32)
+// ===================================
+
+// let isShowPassword = false
+
+// let email = '321321'
+// const correctEmail = ' user@mail.ru';
+// const incorrectEmail = email;
+// let errorMessage = null;
+
+// const validateEmail = function  (){
+//   console.log ("Первая функция foo")
+// }
+// //validateEmail()
+
+// const validateEmail2 = function foo(a){
+//   console.log ("Вторая функция foo")
+//   let c = a
+//   c++
+//   if (c === 10) return;
+  
+//   foo(1)
+// }
+
+//validateEmail2
+
+// const validateEmail3 = ()=> correctEmail === email ? 'Входи' : 'Попробуй еще'
+
+// ----------------------------------
+// const validateEmail3 = ()=> {
+//   console.log ("Стрелочная функция")
+// }
+// const validateEmail4() {
+//   console.log ("Четвертое функция")
+// }
+
+// const validateEmail = (userEmail)=> {
+// let = correctEmail === userEmail ? null : `Обязательно напишите ${correctEmail}`
+// // !!! null; Обязательно напишите user@mail.ru
+// console.log(error)
+
+
+// switch(error){  //null
+//   case `Обязательно напишите ${correctEmail}`:
+//     alert(error);
+//     break
+//     default:
+//       confirm ('Вы успешно ввошли. Продолжить')
+// }
+
+// if  (!!error){
+//   alert(error);
+
+// }else {
+//   confirm ('Вы успешно ввошли. Продолжить')
+// }
+
+// !!error? alert(error) : confirm ('Вы успешно ввошли. Продолжить') //3й вариант
+
+// }
+// // validateEmail(email)
+// validateEmail(correctEmail)
+
+
+// ================================================
+// switch (key) {
+//   case value:
+    
+//     break;
+
+//   default:
+//     break;
+// }
+
+
+// let d = 'global' //строка
+// const fool = (firstName,name,age) => {
+
+//     const foo2 = (secondName) => {
+  
+//       const foo3 = function ( age){
+//         let c = ('foo3')
+//         console.log(firstName,secondName,age)
+//       }
+//       foo3(age)
+//     }
+//     foo2(secondName )
+//   }
+  
+//   fool1('Vlad', 'Sobol', 32)
+
+//  Объекты====================
+let str = 'Stroka'
+let str2 = ``
+let str3 = String ('')
+
+let name = " Tanya"
+
+
+let user1 = {
+name: 'Tanya',
+age:35,
+hasJob: true,
+salary:100,
+isMarried: true,
+emptyValye: null,
+emptyValye2: undefined,
+sayHello: function (){ //функция - это метод
+ console.log("  Привет, я ", user1.name);
+//  return  2
+},
+pet:{
+  cat:{
+    petName: 'Tosya',
+    age:3
+  },
+  dog:{
+    petName: 'Rex',
+    age:20,
   }
-  foo2(secondName )
+}
 }
 
-fool1('Vlad', 'Sobol', 32)
+console.log(user1.pet.cat.petName);
+console.log(user1.pet.dog.petName);
+console.log(user1.pet.dog.petName);
+delete user1.emptyValye
+delete user1.emptyValye2
+console.log(user1)
+
+console.log(user1.age);// рекомендуется смотреть через точку
+console.log(user1); // при раскрытии новое значение
+user1.age = 25
+console.log(user1.age);
+console.log(user1);
+
+// let user2 = {
+// name: 'Dima',
+// age:35,
+// hasJob: true,
+// salary:100,
+// isMarried: true,
+// emptyValye: null,
+// emptyValye2: undefined,
+// sayHello: function (){ //функция - это метод
+//  console.log(" Привет, я ", user2.name);
+//  console.log(" Привет, мне ", user2.age);
+// }
+// }
+// let user3 = {
+// name: 'Sveta',
+// age:35,
+// hasJob: true,
+// salary:100,
+// isMarried: true,
+// emptyValye: null,
+// emptyValye2: undefined,
+// sayHello: function (){ //функция - это метод
+//  console.log(" Привет, я ", user3.name);
+//  console.log(" Привет, мне ", user3.age);
+// }
+// }
+
+
+
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.sayHello());
