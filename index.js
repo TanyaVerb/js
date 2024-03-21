@@ -603,5 +603,3 @@ function checkMoney (obj){
 }2
 22
 checkMoney(pocket2)
-=======
->>>>>>> 58d8e1cb5dda582cff283f0022045b8c10490178
